@@ -232,23 +232,24 @@
           <div class="row g-5">
       <div class="col-md-7 col-lg-8">
 
-        <form class="needs-validation" novalidate="" method="post" action="neworderdb.php">
+        <form class="needs-validation" novalidate="" method="post" action="addproduct.php">
 
             <div class="col-12">
               <label for="address" class="form-label">Title</label>
-              <input type="text" class="form-control" id="address" name="leadscomment" placeholder="Call the Coustomer at 7:00 PM" required="">
+              <input type="text" class="form-control" id="address" name="title" placeholder="B.M.W" required="">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
             </div>
             <div class="col-12">
               <label for="address" class="form-label">Description</label>
-              <input type="text" class="form-control" id="address" name="leadscomment" placeholder="Call the Coustomer at 7:00 PM" required="">
+              <input type="text" class="form-control" id="address" name="description" placeholder="Model-2012 , owner -2" required="">
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
             </div>
             <div class="row g-3">
+              
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Price</label>
               <input type="text" name="Price" class="form-control" id="firstName" placeholder="2,00,000" value="" required="">
@@ -259,7 +260,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Commission</label>
-              <input type="text" class="form-control" name="Commission" id="lastName" placeholder="1,00,000" value="" required="">
+              <input type="text" class="form-control" name="commission" id="lastName" placeholder="1,00,000" value="" required="">
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
