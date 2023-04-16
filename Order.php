@@ -189,7 +189,7 @@
         </div>
       </div>
      <form method="post" action="edit.php">
-                <select class="Ayyribute" name="1">
+                <select class="Ayyribute  " name="1">
               <option selected>Open this select menu</option>
               <option value="1" >First Name</option>
               <option value="2" >Last Name</option>
@@ -200,7 +200,7 @@
               <option value="7" >leadcomments</option>
               <option value="8" >Pay Ment</option>
             </select>
-      Set <input type="text" name="value"> Where S.no Is 
+      Set <input type="text" name="value" > Where S.no Is 
       <input type="text" name="condition">
       <input type="submit">
 

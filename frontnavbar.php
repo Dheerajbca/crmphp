@@ -1,21 +1,25 @@
-<nav class="navbar navbar-expand-lg data-bs-theme='dark'">
-  <div class="container-fluid ">
-    <a class="navbar-brand" href="/index.php">Rihan Moters</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./Public/Pages/Shopnow.php">Shop</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./Public/Pages/aboutus.php">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./Public/Pages/Contactus.php">Contact Us</a>
-        </li>
-      </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <div class="container-fluid">
+        <a href="/index.php" class="navbar-brand">
+            <img src="https://stimg.cardekho.com/pwa/img/carDekho-newLogo.svg" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.php" class="nav-item nav-link active">Home</a>
+                <a href="" class="nav-item nav-link">Login</a>
+                <a href="#" class="nav-item nav-link">Messages</a>
+                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+            </div>
+            <div class="navbar-nav ms-auto  ">
+                <a href="Login.php" class="nav-item nav-link">Admin Login</a>
+            </div>
+            <div class="navbar-nav ">
+                <a href="Login.php" class="nav-item nav-link">Manager Login</a>
+            </div>
+        </div>
     </div>
-  </div>
 </nav>
