@@ -10,15 +10,14 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
-                <a href="" class="nav-item nav-link">Login</a>
-                <a href="#" class="nav-item nav-link">Messages</a>
-                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>
+                <a href="shop1.php" class="nav-item nav-link">Shop Now</a>
+                
             </div>
             <div class="navbar-nav ms-auto  ">
                 <a href="Login.php" class="nav-item nav-link">Admin Login</a>
             </div>
             <div class="navbar-nav ">
-                <a href="Login.php" class="nav-item nav-link">Manager Login</a>
+                <a href="./Manager/login.php" class="nav-item nav-link">Manager Login</a>
             </div>
         </div>
     </div>

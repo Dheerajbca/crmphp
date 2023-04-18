@@ -1,5 +1,5 @@
 <?php
-   include("dbcon.php");
+   include("../dbcon.php");
    session_start();
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -8,7 +8,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT id FROM admin WHERE myusername = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT sno FROM managers WHERE username = '$myusername' and password = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       // $active = $row['active'];
@@ -17,19 +17,13 @@
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($count == 1) {
+      if( $count<25) {
          // session_register("myusername");
          $_SESSION['login_user'] = $myusername;
-         
+         $_COOKIE['varname'] =  $myusername;
+                
          header("location: dashbord.php");
-      }
-      if($count<12) {
-         // session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
-         
-         header("location: dashbord.php");
-      }
-      else {
+      }else {
          $error = "Your Login Name or Password is invalid";
       }
    }

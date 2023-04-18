@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 16, 2023 at 10:16 AM
+-- Generation Time: Apr 18, 2023 at 08:39 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -39,8 +39,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`Id`, `myusername`, `password`, `date`) VALUES
-(1, 'done', 'done', '2023-04-02'),
-(0, 'dheeraj0639', 'dheeraj0639', '2023-04-16');
+(1, 'dheeraj0639', 'dheeraj0639', '2023-04-02'),
+(6, 'prerna', 'prerna', '2023-04-18');
 
 -- --------------------------------------------------------
 
@@ -72,15 +72,15 @@ CREATE TABLE `coustomer` (
 --
 
 INSERT INTO `coustomer` (`sno`, `Date`, `fname`, `lname`, `clothtype`, `phonenumber`, `email`, `address`, `address2`, `country`, `state`, `zip`, `leadcomments`, `administrationname`, `leadtype`, `Payment Status`) VALUES
-(1, '2023-04-02', 'Dheeraj', 'Dheeraj', 'Dheeraj', 0, 'done@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'very busy', 'none', '', 'F'),
-(2, '2023-04-02', 'Dheeraj', 'dheeraj', 'coat', 918427915962, 'dheeraj0639@gmail.com', 'batta', '', 'India', 'Punjab', 140413, '1', '', '', 'done'),
+(1, '2023-04-02', '', 'Dheeraj', 'Dheeraj', 0, 'done@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'very busy', 'none', '', 'F'),
+(2, '2023-04-02', 'Prerna', 'dheeraj', 'coat', 918427915962, 'dheeraj0639@gmail.com', 'batta', '', 'India', 'Punjab', 140413, '1', '', '', 'done'),
 (3, '2023-04-02', 'prernaui', 'shian', 'dress', 559659226, 'ui@gmail.com', 'uo', '', 'India', 'Punjab', 140413, '', '', '', 'Dheeraj'),
 (4, '2023-04-02', 'prernaui', 'shian', 'dress', 559659226, 'ui@gmail.com', 'uo', '', 'India', 'Punjab', 140413, '', '', '', 'd'),
 (5, '2023-04-02', 'oguuo', 'dheeraj', 'nnklnkl', 0, 'nnnii', 'jjpjp', 'nkpjp', 'India', 'Punjab', 54, '', '', '', 'Dheeraj'),
 (6, '2023-04-02', 'Dheeraj', 'kumar', 'dress', 9595489418, 'dheeraj0639@gmail.com', 'batta', '', 'India', '', 140413, '', '', '', '2'),
 (7, '2023-04-02', 'dfdfddf', 'fdfdddf', 'fdfdfdfdf', 0, 'fdfdfdfd', 'fdfdfdfdf', 'dfdfdf', 'India', 'Punjab', 599, '', '', '', 'done'),
 (8, '2023-04-05', 'prerna', '', '', 0, '', '', '', '', '', 0, '', '', '', ''),
-(9, '2023-04-05', '', '', '', 555, '', '', '', '', '', 0, '', '', '', ''),
+(9, '2023-04-05', 'Dheeraj', '', '', 555, '', '', '', '', '', 0, '', '', '', ''),
 (10, '2023-04-05', '', '', '', 0, '', '', '', '', '', 0, '', '', '', ''),
 (11, '2023-04-13', '', '', '', 0, '', '', '', '', '', 0, '', '', '', ''),
 (12, '2023-04-13', 'dfdfddf', '+918427915962', '', 0, 'dheeraj0639@gmail.com', 'batta', '', 'India', '', 140413, '', '', '', 'Dheeraj'),
@@ -91,7 +91,8 @@ INSERT INTO `coustomer` (`sno`, `Date`, `fname`, `lname`, `clothtype`, `phonenum
 (17, '2023-04-13', 'Dheeraj', 'Kumar', 'in Review', 5656565656, 'prerna@gmail.com', 'Hell0o', '', 'India', 'Punjab', 140413, 'Call him at 9 pm', 'Prerna', '', 'Review'),
 (18, '2023-04-13', 'Avneet', '+918427915962', 'dress', 48794, 'dheeraj0639@gmail.com', '', 'sfg', 'India', 'Punjab', 140413, 'batta', 'Prerna', '', 'Done'),
 (19, '2023-04-15', 'prerna', 'shyan', 'BMW Car', 5655566, 'prerena@gmail.com', 'sfsf', 'sdfsdf', 'India', 'Punjab', 140413, 'Call Him at 7 pm', 'Dheeraj', 'Review', 'Done'),
-(20, '2023-04-15', '', '', '', 0, '', '', '', '', '', 0, '', '', '', '');
+(20, '2023-04-15', '', '', '', 0, '', '', '', '', '', 0, '', '', '', ''),
+(21, '2023-04-18', 'Rinku', 'Sharma', 'BMW Car', 5565656, 'hello@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'This is not a good lead', 'dheeraj', 'review', 'Review');
 
 -- --------------------------------------------------------
 
@@ -111,15 +112,9 @@ CREATE TABLE `managers` (
 --
 
 INSERT INTO `managers` (`sno`, `username`, `password`, `date`) VALUES
-(1, 'done', 'dheeraj063', '2023-04-16'),
-(2, '22', 'done', '2023-04-16'),
-(3, 'hello', 'new', '2023-04-16'),
-(4, 'Dheeraj', 'kumar', '2023-04-16'),
-(5, 'dheeraj063', 'satnaamdih', '2023-04-16'),
-(6, 'dheeraj063', 'satnaamdih', '2023-04-16'),
-(7, 'dheeraj063', 'new', '2023-04-16'),
-(8, '', '', '2023-04-16'),
-(9, 'dheeraj063', 'new', '2023-04-16');
+(1, 'dheeraj', 'dheeraj', '2023-04-16'),
+(10, 'prerna', 'prerna', '2023-04-18'),
+(11, 'aman', 'Aman223', '2023-04-18');
 
 -- --------------------------------------------------------
 
@@ -152,6 +147,7 @@ INSERT INTO `products` (`sno`, `tite`, `description`, `price`, `comission`) VALU
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
+  ADD PRIMARY KEY (`Id`),
   ADD KEY `ID` (`Id`);
 
 --
@@ -177,16 +173,22 @@ ALTER TABLE `products`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `Id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `coustomer`
 --
 ALTER TABLE `coustomer`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `managers`
 --
 ALTER TABLE `managers`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `products`

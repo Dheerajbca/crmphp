@@ -26,11 +26,6 @@
 
 
     <style>
-      
-         table, th, td {
-            border: 1px solid black;
-         }
-     
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -107,8 +102,6 @@
     
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
-    
-
   </head>
   <body data-new-gr-c-s-check-loaded="14.1102.0" data-gr-ext-installed="">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -173,12 +166,13 @@
 
 <div class="container-fluid">
   <div class="row">
-  <?php
+    <?php
     include("navbar.php");
     ?>
+
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Admin Manager</h1>
+        <h1 class="h2">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
             <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
@@ -191,49 +185,8 @@
         </div>
       </div>
 
-     
-      <form method="post" action="admininsertion.php">
-      <div class="row g-3">
-      <div class="col-sm-3">
-      <label for="firstName" class="form-label"> User Name :</label>
-     <input type="text" class=" form-control" name="username">
-      </div>
-     <div class="col-sm-3">
-     <label for="firstName" class="form-label"> Password  : </label> 
-     
+      <canvas class="my-4 w-100" id="myChart" width="547" height="231" style="display: block; box-sizing: border-box; height: 231px; width: 547px;"></canvas>
 
-       <input type="text" name="password" class=" form-control" > <br>
-       </div> 
-      </div>
-      <input class="w-20 btn btn-primary btn-lg " type="submit" value="submit">
-
-
-    </form>
-    <?php
-     include("adminfetch.php");
-    ?>
-     <form method="post" action="editadmin.php">
-     <div class="row g-3">
-     <div class="col-sm-3">
-                Attribute :
-                <select class="Ayyribute form-control" name="1"  >
-              <option selected>Open this select menu</option>
-              <option value="1" >User name</option>
-              <option value="2" >Password</option>
-            </select><br>
-     </div>
-     <div class="col-sm-3">
-      Set <input type="text" name="value " class=" form-control" ></div> <div class="col-sm-3"> Where S.no Is 
-
-      <input type="text" name="condition" class=" form-control" ><br></div>
-     </div>
-     </div>
-      <input class="w-20 btn btn-primary btn-lg" type="submit"> <br>
-      </form><br>
-     
-
-    
-     
       
     </main>
   </div>
@@ -246,4 +199,4 @@
       <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script><script src="dashboard.js"></script>
   
 
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html> 
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
