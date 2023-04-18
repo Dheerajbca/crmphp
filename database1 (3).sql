@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2023 at 08:39 AM
+-- Generation Time: Apr 18, 2023 at 06:42 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -92,7 +92,8 @@ INSERT INTO `coustomer` (`sno`, `Date`, `fname`, `lname`, `clothtype`, `phonenum
 (18, '2023-04-13', 'Avneet', '+918427915962', 'dress', 48794, 'dheeraj0639@gmail.com', '', 'sfg', 'India', 'Punjab', 140413, 'batta', 'Prerna', '', 'Done'),
 (19, '2023-04-15', 'prerna', 'shyan', 'BMW Car', 5655566, 'prerena@gmail.com', 'sfsf', 'sdfsdf', 'India', 'Punjab', 140413, 'Call Him at 7 pm', 'Dheeraj', 'Review', 'Done'),
 (20, '2023-04-15', '', '', '', 0, '', '', '', '', '', 0, '', '', '', ''),
-(21, '2023-04-18', 'Rinku', 'Sharma', 'BMW Car', 5565656, 'hello@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'This is not a good lead', 'dheeraj', 'review', 'Review');
+(21, '2023-04-18', 'Rinku', 'Sharma', 'BMW Car', 5565656, 'hello@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'This is not a good lead', 'dheeraj', 'review', 'Review'),
+(22, '2023-04-18', 'Dheeraj', 'kumar', '', 0, 'dheeraj0639@gmail.com', 'batta', '', 'India', 'Punjab', 140413, 'batta', 'dheeraj', '', '');
 
 -- --------------------------------------------------------
 
@@ -182,7 +183,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `coustomer`
 --
 ALTER TABLE `coustomer`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `managers`
